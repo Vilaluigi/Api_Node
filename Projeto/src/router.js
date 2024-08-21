@@ -4,7 +4,10 @@ const app= express()
 
 
 
-app.get("/",TasksController.listar)
+app.get("/listar",TasksController.listar)
+app.post("/criar",TasksController.Criar)
+app.delete("/deletar/:id",TasksController.Deletar)
+app.put("/atualizar/:id",TasksController.Atuali)
 
 
 
